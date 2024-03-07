@@ -1,0 +1,35 @@
+{
+  "name": "pixee",
+  "version": "0.0.1",
+  "description": "Light-weight UI library built for modern web applications.",
+  "main": "dist/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruceArmstrong007/Pixee.git"
+  },
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "PIXEE",
+    "pixee",
+    "UI",
+    "UI/UX",
+    "ui/ux",
+    "ui",
+    "ux",
+    "UX",
+    "css",
+    "sass",
+    "SASS",
+    "scss"
+  ],
+  "author": "Bruce Armstrong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BruceArmstrong007/Pixee/issues"
+  },
+  "homepage": "https://github.com/BruceArmstrong007/Pixee#readme"
+}
