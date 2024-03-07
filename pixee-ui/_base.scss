@@ -36,6 +36,15 @@ button {
   border-radius: $base-border-radius;
   border-width: $base-border-thickness;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .notification {
   color: $secondary;
   border-color: $secondary;

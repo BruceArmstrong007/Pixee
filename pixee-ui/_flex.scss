@@ -1,0 +1,68 @@
+$flex-direction: row, column, row-reverse, column-reverse;
+$justify-content: flex-start, flex-end, center, space-between, space-around,
+  space-evenly;
+$justify-self: start, end, center, stretch, auto;
+$align-items: flex-start, flex-end, center, baseline, stretch;
+$align-content: flex-start, flex-end, center, space-between, space-around,
+  space-evenly, stretch;
+$align-self: flex-start, flex-end, center, baseline, stretch, auto;
+$place-content: start, end, center, baseline, stretch, space-between,
+  space-around, space-evenly;
+$place-items: start, end, center, baseline, stretch;
+$place-self: start, end, center, stretch, auto;
+$flex-wrap: wrap, wrap-reverse, nowrap;
+$flex-grow: 1, 0;
+$flex-shrink: 1, 0;
+
+$flex: (
+  "flex-direction": $flex-direction,
+  "justify-content": $justify-content,
+  "justify-self": $justify-self,
+  "align-items": $align-items,
+  "align-content": $align-content,
+  "align-self": $align-self,
+  "place-content": $place-content,
+  "place-items": $place-items,
+  "place-self": $place-self,
+  "flex-wrap": $flex-wrap,
+);
+
+// Flex Loop
+@each $key, $data in $flex {
+  @each $val in $data {
+    .#{$key}-#{$val} {
+      #{$key}: $val;
+    }
+  }
+}
+
+$total-order: 9;
+
+@for $i from 1 through $total-order {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+
+.order-first {
+  order: -9999;
+}
+.order-last {
+  order: 9999;
+}
+.order-none {
+  order: 0;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-auto {
+  flex: 1 1 auto;
+}
+.flex-initial {
+  flex: 0 1 auto;
+}
+.flex-none {
+  flex: none;
+}
