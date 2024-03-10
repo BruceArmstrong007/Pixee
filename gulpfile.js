@@ -6,7 +6,7 @@ const purgecss = require('gulp-purgecss');
 
 function GenerateCSS() {
     return src('sass/**/*.scss')
-        .pipe(sass())
+        .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(purgecss({ content: ['*.html'] }))
         .pipe(dest('css'))
 }
@@ -26,7 +26,6 @@ function build() {
 
 function buildCSS() {
     return src('sass/**/*.scss')
-        .pipe(sass())
         .pipe(dest('dist'))
 }
 
