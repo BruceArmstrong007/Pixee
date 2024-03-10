@@ -8,11 +8,11 @@
 
 .navbar {
   @extend %flex-layout;
-  padding: $base-padding $base-padding * 2;
-  box-shadow: $base-box-shadow;
+  padding: var(--base-padding) calc(var(--base-padding) * 2);
+  box-shadow: var(--base-box-shadow);
 
   .site-title {
-    font-size: $font-size-lg;
+    font-size: var(--font-size-lg);
   }
 
   .container {

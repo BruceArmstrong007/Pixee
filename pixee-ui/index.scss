@@ -13,12 +13,12 @@
 // Base
 @import "base";
 
-
 // Components
-@import "components/card";
-@import "components/button";
-@import "components/navbar";
-@import "components/badge";
-
+@layer components {
+  @import "components/card";
+  @import "components/button";
+  @import "components/navbar";
+  @import "components/badge";
+}
 // Utilities
 @import "utilities";

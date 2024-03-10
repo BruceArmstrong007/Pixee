@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: map-get($colors, 'blue');
+  color: map-get($colors, "blue");
 }
 
 img {
@@ -23,18 +23,18 @@ img {
 button {
   color: white;
   border: 0;
-  background: $primary;
-  border-radius: $base-border-radius;
-  padding: $base-padding;
+  background: map-get($colors, "primary");
+  border-radius: map-get($base-variables, "base-border-radius");
+  padding: map-get($base-variables, "base-padding");
 }
 .error {
-  color: $error;
-  border-color: $error;
+  color: map-get($colors, "error");
+  border-color: map-get($colors, "error");
   border-style: solid;
-  margin: $base-margin;
-  padding: $base-padding;
-  border-radius: $base-border-radius;
-  border-width: $base-border-thickness;
+  margin: map-get($base-variables, "base-margin");
+  padding: map-get($base-variables, "base-padding");
+  border-radius: map-get($base-variables, "base-border-radius");
+  border-width: map-get($base-variables, "base-border-thickness");
 }
 
 .container {
@@ -46,13 +46,13 @@ button {
 }
 
 .notification {
-  color: $secondary;
-  border-color: $secondary;
+  color: map-get($colors, "secondary");
+  border-color: map-get($colors, "secondary");
   border-style: solid;
-  margin: $base-margin;
-  padding: $base-padding;
-  border-radius: $base-border-radius;
-  border-width: $base-border-thickness;
+  margin: map-get($base-variables, "base-margin");
+  padding: map-get($base-variables, "base-padding");
+  border-radius: map-get($base-variables, "base-border-radius");
+  border-width: map-get($base-variables, "base-border-thickness");
 }
 
 .dark-theme {

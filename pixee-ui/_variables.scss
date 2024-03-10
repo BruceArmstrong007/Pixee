@@ -1,40 +1,66 @@
 // Theme colors
-$primary: #326dee !default;
-$secondary: #1ac888 !default;
-$error: #d32752 !default;
-$info: #f6c31c !default;
+:root {
+  --primary: #326dee;
+  --secondary: #1ac888;
+  --error: #d32752;
+  --info: #f6c31c;
+  --blue: #1919e6;
+  --red: #e61919;
+  --yellow: #e6e619;
+  --green: #19e635;
+  --orange: #ffa600;
+  --purple: #9900ff;
+  --gray: #808080;
+  --black: black;
+  --white: white;
+
+  --base-padding: 0.75rem;
+  --base-margin: 0.75rem;
+
+  // Borders
+  --base-border-radius: 20px;
+  --base-border-thickness: 1px;
+
+  // Box Shadow
+  --base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+  // Font Size
+  --base-font-size: 1rem;
+  --font-size-sm: var(--base-font-size) * 0.75;
+  --font-size-lg: var(--base-font-size) * 1.5;
+  --font-size-xl: var(--base-font-size) * 2;
+  --font-size-xxl: var(--base-font-size) * 3;
+}
 
 // Color Palette
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "error": $error,
-  "info": $info,
-  "blue": #1919e6,
-  "red": #e61919,
-  "yellow": #e6e619,
-  "green": #19e635,
-  "orange": #ffa600,
-  "purple": #9900ff,
-  "gray": #808080,
-  "black": black,
-  "white": white,
+  "primary": var(--primary),
+  "secondary": var(--secondary),
+  "error": var(--error),
+  "info": var(--info),
+  "blue": var(--blue),
+  "red": var(--red),
+  "yellow": var(--yellow),
+  "green": var(--green),
+  "orange": var(--orange),
+  "purple": var(--purple),
+  "gray": var(--gray),
+  "black": var(--black),
+  "white": var(--white),
 );
 
-// Spacing
-$base-padding: 0.75rem !default;
-$base-margin: 0.75rem !default;
+$base-variables: (
+  "base-padding": var(--base-padding),
+  "base-margin": var(--base-margin),
+  "base-border-radius": var(--base-border-radius),
+  "base-border-thickness": var(--base-border-thickness),
+  "base-box-shadow": var(--base-box-shadow),
+  "base-font-size": var(--base-font-size),
+);
 
-// Borders
-$base-border-radius: 20px !default;
-$base-border-thickness: 1px !default;
-
-// Box Shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
-
-// Font Size
-$base-font-size: 1rem !default;
-$font-size-sm: $base-font-size * 0.75 !default;
-$font-size-lg: $base-font-size * 1.5 !default;
-$font-size-xl: $base-font-size * 2 !default;
-$font-size-xxl: $base-font-size * 3 !default;
+$font-sizes: (
+  "font-size-sm": var(--font-size-sm),
+  "font-size-lg": var(--font-size-lg),
+  "font-size-xl": var(--font-size-xl),
+  "font-size-xxl": var(--font-size-xxl),
+);

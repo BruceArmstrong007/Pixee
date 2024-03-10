@@ -1,5 +1,5 @@
 @function light-comp($color) {
-    $complement: complement($color);
-    $light-complement: lighten($complement, 30%);
-    @return $light-complement;
+//   $complement: adjust-hue($color, 180deg);
+  $light-complement: color-mix(in srgb, white  5%, $color);
+  @return $light-complement;
 }

@@ -2,8 +2,8 @@
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  padding: $base-padding $base-padding * 2;
-  border-radius: $base-border-radius;
+  padding: var(--base-padding) calc(var(--base-padding) * 2);
+  border-radius: var(--base-border-radius);
   background-color: $bg-color;
 }
 
@@ -16,12 +16,12 @@
     @include btn($val);
     border: 0;
     &:hover {
-      background-color: lighten($val, 5%);
+      background-color: color-mix(in srgb, white calc(5%), $val);
     }
   }
   .btn-outlined-#{$key} {
     @include btn(#fff);
-    border: $base-border-thickness solid $val;
+    border: var(--base-border-thickness) solid $val;
     &:hover {
       background-color: $val;
     }
