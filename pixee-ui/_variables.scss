@@ -26,10 +26,11 @@
 
   // Font Size
   --base-font-size: 1rem;
-  --font-size-sm: var(--base-font-size) * 0.75;
-  --font-size-lg: var(--base-font-size) * 1.5;
-  --font-size-xl: var(--base-font-size) * 2;
-  --font-size-xxl: var(--base-font-size) * 3;
+  --font-size-md: var(--base-font-size);
+  --font-size-sm: calc(var(--base-font-size) * 0.75);
+  --font-size-lg: calc(var(--base-font-size) * 1.5);
+  --font-size-xl: calc(var(--base-font-size) * 2);
+  --font-size-xxl: calc(var(--base-font-size) * 3);
 }
 
 // Color Palette
@@ -50,17 +51,30 @@ $colors: (
 );
 
 $base-variables: (
-  "base-padding": var(--base-padding),
-  "base-margin": var(--base-margin),
-  "base-border-radius": var(--base-border-radius),
-  "base-border-thickness": var(--base-border-thickness),
-  "base-box-shadow": var(--base-box-shadow),
-  "base-font-size": var(--base-font-size),
+  "padding": var(--base-padding),
+  "margin": var(--margin),
+  "border-radius": var(--base-border-radius),
+  "border-thickness": var(--base-border-thickness),
+  "box-shadow": var(--base-box-shadow),
+  "font-size": var(--base-font-size),
 );
 
+@each $key, $val in $base-variables {
+  .base-#{$key} {
+    #{$key}: #{$val};
+  }
+}
+
 $font-sizes: (
-  "font-size-sm": var(--font-size-sm),
-  "font-size-lg": var(--font-size-lg),
-  "font-size-xl": var(--font-size-xl),
-  "font-size-xxl": var(--font-size-xxl),
+  "sm": var(--font-size-sm),
+  "md": var(--font-size-md),
+  "lg": var(--font-size-lg),
+  "xl": var(--font-size-xl),
+  "xxl": var(--font-size-xxl),
 );
+
+@each $key, $val in $font-sizes {
+  .font-size-#{$key} {
+    font-size: $val;
+  }
+}
