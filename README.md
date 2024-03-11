@@ -146,7 +146,7 @@ In style.css
 -----------------------
 
 
-## Documentation coming soon
+## ![Docs Link](https://brucearmstrong007.github.io/Pixee)
 
 ### Demo - run index.html in your local machine - ideally via live server in vscode
 
