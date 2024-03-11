@@ -1,62 +1,41 @@
-This UI library exposes index.css and index.scss files
+# Pixee - a lightweight UI library for modern web apps.
 
-npm i pixee - to install this UI library
+-----------
 
-.scss
+## Description
 
++ Pixee is a small css library that can be imported using in vanilla js or your favourite framework (css/sass).
++ It has colors, themes, uttities, components, flex and flex based grid layouts (minimal),
++ Yes! Theme and other css variables are entirely customizable
+
+----------
+
+## Setup - Installation
+
+### Node 
+```
+npm i pixee
 ```
 
-
-// changable variables (theme colors, padding, margin etc)
-
-$primary: indigo;
-$secondary:
-$error:<value>;
-$info:<value>;
-// Spacing
-$base-padding:<value>;
-$base-margin:<value>;
-
-// Borders
-$base-border-radius:<value>;
-$base-border-thickness:<value>;
-
-// Box Shadow
-$base-box-shadow:<value>;
-
-// Font Size
-$base-font-size:<value>;
-$font-size-sm:<value>;
-$font-size-lg:<value>;
-$font-size-xl:<value>;
-$font-size-xxl:<value>;
-
-
-// import pixee from your local node_modules
-
-@import "pixee-ui";
-
-// changeable theme Examples
-
-.dark-theme {
-  color: white;
-  background-color: black;
-}
-
-.light-theme {
-  background-color: white;
-  color: black;
-}
-
-.dark-theme {
-  @extend .text-primary-light-8;
-  @extend .bg-primary-dark-8;
-}
-
-.light-theme {
-  @extend .text-primary-dark-4;
-  @extend .bg-primary-light-4;
-}
-
-
+### CDN CSS Import
 ```
+    <style>
+      @import url("https://cdn.jsdelivr.net/gh/BruceArmstrong007/Pixee/dist/index.css");
+
+      // other css stuff
+
+    </style>
+```
+***OR***
+```
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BruceArmstrong007/Pixee/dist/index.css">
+
+  // other stuff
+
+</head>
+```
+-----------------------
+
+
+## Documentation coming soon
