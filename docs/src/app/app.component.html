@@ -1,0 +1,422 @@
+<div [ngClass]="{ 'dark-theme': darkMode(), 'light-theme': !darkMode() }">
+  <nav class="navbar-primary text-white mb-4">
+    <div class="container">
+      <h2 class="site-title">Pixee UI</h2>
+      <p>A lightweight CSS library for modern web applications.</p>
+      <button
+        class="btn-outlined-black text-black text-hover-white font-size-xs"
+        (click)="switchMode()"
+      >
+        Switch Theme
+      </button>
+    </div>
+  </nav>
+  <div class="container">
+    <!-- colors -->
+    <h2 class="mb-2">Colors</h2>
+    <div class="card">
+      <div class="card-title">Text</div>
+      <div class="card-body">
+        <span class="text-primary">primary text</span> |
+        <span class="text-hover-secondary">secondary hover text</span> |
+        <span class="text-error">error text</span> |
+        <span class="text-info">info text</span> |
+        <span class="text-hover-blue">blue hover text</span> |
+        <span class="text-red">red text</span> |
+        <span class="text-green">green text</span> |
+        <span class="text-yellow">yellow text</span> |
+        <span class="text-hover-purple">purple hover text</span> |
+        <span class="text-orange">orange text</span> |
+        <span class="text-gray">gray text</span>
+        <br />
+        <br />
+        <span class="pt-2"> Syntax : text-(color) text-hover-(color) </span>
+        <br />
+        <br />
+        <span class="pt-2"> Example : text-blue text-hover-yellow </span>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="card">
+      <div class="card-title">Background</div>
+      <div class="card-body">
+        <span class="bg-primary text-white">bg primary</span> |
+        <span class="bg-secondary text-white">bg secondary</span> |
+        <span class="bg-error text-white">bg error</span> |
+        <span class="bg-info text-white">bg info</span> |
+        <span class="bg-blue text-white">bg blue</span> |
+        <span class="bg-red text-white">bg red</span> |
+        <span class="bg-green text-white">bg green</span> |
+        <span class="bg-yellow text-white">bg yellow</span> |
+        <span class="bg-purple text-white">bg purple</span> |
+        <span class="bg-orange text-white">bg orange</span> |
+        <span class="bg-gray text-white">bg gray</span> |
+        <br />
+        <br />
+        <span class="pt-2"> Syntax : bg-(color) </span>
+        <br />
+        <br />
+        <span class="pt-2"> Example : bg-blue </span>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="card">
+      <div class="card-title">Light and Dark variants</div>
+      <div class="card-body">
+        <span class="bg-primary-dark-8 text-white">primary dark 8</span> |
+        <span class="bg-primary-dark-6 text-white">primary dark 6</span> |
+        <span class="bg-primary-dark-4 text-white">primary dark 4</span> |
+        <span class="bg-primary-dark-2 text-white">primary dark 2</span> |
+        <span class="bg-primary text-white">primary</span> |
+        <span class="bg-primary-light-2 text-white">primary light 2</span> |
+        <span class="bg-primary-light-4 text-white">primary light 4</span> |
+        <span class="bg-primary-light-6 text-white">primary light 6</span> |
+        <span class="bg-primary-light-8 text-white">primary light 8</span> |
+
+        <br />
+        <br />
+        <span class="pt-2">
+          Syntax : bg-(color)-light-(1-9) bg-(color)-dark-(1-9)
+        </span>
+        <br />
+        <br />
+        <span class="pt-2">
+          Example : bg-primary-light-2 bg-primary-dark-6
+        </span>
+        <br />
+        <br />
+
+        <span class="text-primary-dark-8">primary dark 8</span> |
+        <span class="text-primary-dark-6">primary dark 6</span> |
+        <span class="text-primary-dark-4">primary dark 4</span> |
+        <span class="text-primary-dark-2">primary dark 2</span> |
+        <span class="text-primary">primary</span> |
+        <span class="text-primary-light-2">primary light 2</span> |
+        <span class="text-primary-light-4">primary light 4</span> |
+        <span class="text-primary-light-6">primary light 6</span> |
+        <span class="text-primary-light-8">primary light 8</span> |
+        <br />
+        <br />
+        <span class="pt-2">
+          Syntax : text-(color)-light-(1-9) text-(color)-dark-(1-9)
+        </span>
+        <br />
+        <br />
+        <span class="pt-2">
+          Example : text-primary-light-2 text-primary-dark-6
+        </span>
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <br /><br />
+
+    <hr class="mt-4 mb-4" />
+
+    <!-- font sizes -->
+    <h2 class="mb-2">Font Sizes</h2>
+    <div class="font-size-sm">this is small font - (sm)</div>
+    <div class="font-size-md">this is medium font - (md)</div>
+    <div class="font-size-lg">this is large font - (lg)</div>
+    <div class="font-size-xl">this is extra large font - (xl)</div>
+    <div class="font-size-xxl">this is extra, extra large font - (xxl)</div>
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : font-size-(size) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : font-size-sm </span>
+    <br />
+    <br />
+    <hr class="mt-4 mb-4" />
+
+    <!-- Margins & Paddings -->
+    <h2 class="mb-2">Margins and Paddings</h2>
+    <div class="p-1">Padding 1</div>
+    <div class="ml-2">Margin left 2</div>
+    <div class="pr-5">Padding right 5</div>
+    <div class="mt-3">Margin top 3</div>
+    <br />
+    <br />
+    <span class="pt-2">
+      Syntax : m(direction - l, r, t, b)-(1-5) p(direction - l, r, t, b)-(1-5)
+    </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : mb-4 pt-2 </span>
+    <br />
+    <br />
+    <hr class="mt-4 mb-4" />
+
+    <!-- Displays -->
+    <h2 class="mb-2">Displays</h2>
+    <div class="font-size-md">None - (n)</div>
+    <div class="font-size-md">Block - (b)</div>
+    <div class="font-size-md">Flex - (f)</div>
+    <div class="font-size-md">Inline Block - (i-b)</div>
+
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : display-(value) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : display-b </span>
+    <br />
+    <br />
+    <hr class="mt-4 mb-4" />
+
+    <!-- buttons -->
+    <h2 class="mb-2">Buttons</h2>
+    <a href="#" class="btn">default btn</a>
+    <a href="#" class="btn-primary text-white">click me</a>
+    <a href="#" class="btn-secondary text-white">click me</a>
+    <a href="#" class="btn-error text-white">click me</a>
+    <a href="#" class="btn-info">click me</a>
+    <a href="#" class="btn-outlined-purple text-purple text-hover-white"
+      >click me</a
+    >
+    <a href="#" class="btn-outlined-orange text-orange text-hover-white"
+      >click me</a
+    >
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : btn-(color) btn-outlined-(color) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : btn-primary btn-outlined-primary </span>
+    <br />
+    <br />
+
+    <hr class="mt-4 mb-4" />
+
+    <!-- Navbar -->
+    <h2 class="mb-2">Navbar</h2>
+    <nav class="navbar-primary text-white mb-4">
+      <div class="container">
+        <h2 class="site-title">Title</h2>
+        <p>Hello world.</p>
+        <button
+          class="btn-outlined-black text-black text-hover-white font-size-xs"
+        >
+          button
+        </button>
+      </div>
+    </nav>
+    <span class="pt-2"> Syntax : navbar-(color) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : navbar-info </span>
+
+    <hr class="mt-4 mb-4" />
+
+    <!-- cards -->
+    <h2 class="mb-2">Cards</h2>
+    <div class="card">
+      <h1 class="card-title">This is a title (card-title)</h1>
+      <p class="card-body">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sunt, quo
+        totam aliquam praesentium ducimus tempore sapiente quia nulla optio?
+        Lorem ipsum, dolor sit amet consectetur
+        <a href="">adipisicing elit</a>. Libero laboriosam laborum
+        exercitationem autem commodi voluptas odio aliquid ut velit doloremque
+        minima, quaerat dolores, corporis consequuntur totam nam id veniam
+        maxime (card-body) .
+      </p>
+    </div>
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : card card-title card-body </span>
+    <hr class="mt-4 mb-4" />
+
+    <!-- badges -->
+    <h2 class="mb-2">Badges</h2>
+    <span class="badge-orange text-white ml-1">new</span>
+    <span class="badge-blue text-white ml-1">few</span>
+    <span class="badge-red text-white ml-1">mew</span>
+    <span class="badge-green text-white ml-1">rew</span>
+    <span class="badge-primary text-white ml-1">kew</span>
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : badge-(color) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : badge-info </span>
+
+    <hr class="mt-4 mb-4" />
+
+       <!-- Flex system -->
+       <h2 class="mb-2">Responsive Flex System</h2>
+       <div class="display-f flex-wrap-wrap justify-content-space-evenly gap-4">
+         <div class="display-f justify-content-center align-items-center p-2">
+           <div class="card">
+             <h3 class="card-title">Hello, world</h3>
+             <p class="card-body">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             </p>
+           </div>
+         </div>
+         <div class="display-f justify-content-center align-items-center pr-2 pl-2">
+           <div class="card">
+             <h3 class="card-title">Hello, world</h3>
+             <p class="card-body">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             </p>
+           </div>
+         </div>
+         <div class="display-f justify-content-center align-items-center pr-2 pl-2">
+           <div class="card">
+             <h3 class="card-title">Hello, world</h3>
+             <p class="card-body">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             </p>
+           </div>
+         </div>
+         <div class="display-f justify-content-center align-items-center pr-2 pl-2">
+           <div class="card">
+             <h3 class="card-title">Hello, world</h3>
+             <p class="card-body">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             </p>
+           </div>
+         </div>
+       </div>
+       <br />
+       <br />
+       <span class="pt-2">
+         Syntax : display-f justify-content-(option - center, space-between, space-evenly, flex-start, flex-end) align-items-(option - center, space-between, space-evenly, start, end)
+       </span>
+       <br />
+       <br />
+       <span class="pt-2">
+         Example : display-f justify-content-center align-items-center
+       </span>
+       <hr class="mt-4 mb-4" />
+
+    <!-- grid system -->
+    <h2 class="mb-2">Responsive Grid System - (Based on flex)</h2>
+    <div class="row gap-2 justify-content-center">
+      <div class="col-12-xs col-5-sm col-3-xl">
+        <div class="card">
+          <h3 class="card-title">Hello, world</h3>
+          <p class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="col-12-xs col-5-sm col-3-xl">
+        <div class="card">
+          <h3 class="card-title">Hello, world</h3>
+          <p class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="col-12-xs col-5-sm col-3-xl">
+        <div class="card">
+          <h3 class="card-title">Hello, world</h3>
+          <p class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="col-12-xs col-5-sm col-3-xl">
+        <div class="card">
+          <h3 class="card-title">Hello, world</h3>
+          <p class="card-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <span class="pt-2">
+      Syntax : col-(1-12)-(size - xs, sm, md, lg, xl, xxl) , row (flex with
+      wrap)
+    </span>
+    <br />
+    <br />
+    <span class="pt-2">
+      Example : col-5-sm (occupy 5 out of 12 starting from small devices)
+    </span>
+    <hr class="mt-4 mb-4" />
+
+    <!-- utilities -->
+    <h2>Using Utilities</h2>
+    <h3 class="mt-2">Border Radius</h3>
+    <div class="mt-2 text-orange-dark-2 bg-orange-light-5 p-2 br-xs">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+        perspiciatis!
+      </p>
+    </div>
+    <div class="mt-2 text-secondary-dark-2 bg-secondary-light-5 p-2 br-lg">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+        perspiciatis!
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : br-(size - xs, sm, lg) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : br-sm (Border radius of container) </span>
+
+    <h3 class="mt-2">Opacity</h3>
+    <div>
+      <div class="display-i-b bg-purple text-white o-10 mt-3 mr-3 p-2">
+        opacity 10
+      </div>
+      <div class="display-i-b bg-purple text-white o-30 mt-3 mr-3 p-2">
+        opacity 30
+      </div>
+      <div class="display-i-b bg-purple text-white o-50 mt-3 mr-3 p-2">
+        opacity 50
+      </div>
+      <div class="display-i-b bg-purple text-white o-70 mt-3 mr-3 p-2">
+        opacity 70
+      </div>
+      <div class="display-i-b bg-purple text-white o-90 mt-3 mr-3 p-2">
+        opacity 90
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <span class="pt-2"> Syntax : o-(10-100) </span>
+    <br />
+    <br />
+    <span class="pt-2"> Example : 0-50 (Opacity of container) </span>
+    <hr class="mt-4 mb-4" />
+
+    <br />
+    <div
+      class="display-f justify-content-center align-items-center flex-direction-column"
+    >
+      <h3 class="font-size-lg">
+        For Installation and customising themes, colors and variables, Checkout
+        this
+        <a
+          class="text-primary text-hover-green"
+          target="_blank"
+          href="https://github.com/BruceArmstrong007/Pixee/blob/master/README.md"
+          >Readme.md</a
+        >
+      </h3>
+      <span class="font-size-lg pt-2"> Happy Coding !</span>
+      <span class="font-size-xs pt-2"> 0 effort on docs for now :) </span>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
