@@ -56,11 +56,11 @@ button {
 }
 
 .dark-theme {
-  @extend .text-primary-light-8;
-  @extend .bg-primary-dark-8;
+  @extend .text-primary-light-9;
+  @extend .bg-primary-dark-9;
 }
 
 .light-theme {
-  @extend .text-primary-dark-8;
-  @extend .bg-primary-light-8;
+  @extend .text-primary-dark-9;
+  @extend .bg-primary-light-9;
 }
