@@ -15,11 +15,10 @@
 @import "base";
 
 // Components
-@layer components {
-  @import "components/card";
-  @import "components/button";
-  @import "components/navbar";
-  @import "components/badge";
-}
+@import "components/card";
+@import "components/button";
+@import "components/navbar";
+@import "components/badge";
+
 // Utilities
 @import "utilities";
