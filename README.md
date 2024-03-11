@@ -39,3 +39,5 @@ npm i pixee
 
 
 ## Documentation coming soon
+
+### Run index.html in your local machine - ideally via live server in vscode
