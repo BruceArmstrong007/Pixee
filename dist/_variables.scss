@@ -1,0 +1,80 @@
+// Theme colors
+:root {
+  --primary: #326dee;
+  --secondary: #1ac888;
+  --error: #d32752;
+  --info: #f6c31c;
+  --blue: #1919e6;
+  --red: #e61919;
+  --yellow: #e6e619;
+  --green: #19e635;
+  --orange: #ffa600;
+  --purple: #9900ff;
+  --gray: #808080;
+  --black: black;
+  --white: white;
+
+  --base-padding: 0.75rem;
+  --base-margin: 0.75rem;
+
+  // Borders
+  --base-border-radius: 20px;
+  --base-border-thickness: 1px;
+
+  // Box Shadow
+  --base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+  // Font Size
+  --base-font-size: 1rem;
+  --font-size-md: var(--base-font-size);
+  --font-size-sm: calc(var(--base-font-size) * 0.75);
+  --font-size-lg: calc(var(--base-font-size) * 1.5);
+  --font-size-xl: calc(var(--base-font-size) * 2);
+  --font-size-xxl: calc(var(--base-font-size) * 3);
+}
+
+// Color Palette
+$colors: (
+  "primary": var(--primary),
+  "secondary": var(--secondary),
+  "error": var(--error),
+  "info": var(--info),
+  "blue": var(--blue),
+  "red": var(--red),
+  "yellow": var(--yellow),
+  "green": var(--green),
+  "orange": var(--orange),
+  "purple": var(--purple),
+  "gray": var(--gray),
+  "black": var(--black),
+  "white": var(--white),
+);
+
+$base-variables: (
+  "padding": var(--base-padding),
+  "margin": var(--margin),
+  "border-radius": var(--base-border-radius),
+  "border-thickness": var(--base-border-thickness),
+  "box-shadow": var(--base-box-shadow),
+  "font-size": var(--base-font-size),
+);
+
+@each $key, $val in $base-variables {
+  .base-#{$key} {
+    #{$key}: #{$val};
+  }
+}
+
+$font-sizes: (
+  "sm": var(--font-size-sm),
+  "md": var(--font-size-md),
+  "lg": var(--font-size-lg),
+  "xl": var(--font-size-xl),
+  "xxl": var(--font-size-xxl),
+);
+
+@each $key, $val in $font-sizes {
+  .font-size-#{$key} {
+    font-size: $val;
+  }
+}

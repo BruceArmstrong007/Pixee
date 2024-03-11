@@ -1,9 +1,6 @@
 /node_modules
-/css
-/sass
-/antui
+/pixee-ui
 gulpfile.js
-index.js
 index.html
 package.json
 package-lock.json

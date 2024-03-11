@@ -1,0 +1,66 @@
+// import google font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* reset styles */
+* {
+  color: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($colors, "blue");
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  color: white;
+  border: 0;
+  background: map-get($colors, "primary");
+  border-radius: map-get($base-variables, "base-border-radius");
+  padding: map-get($base-variables, "base-padding");
+}
+.error {
+  color: map-get($colors, "error");
+  border-color: map-get($colors, "error");
+  border-style: solid;
+  margin: map-get($base-variables, "base-margin");
+  padding: map-get($base-variables, "base-padding");
+  border-radius: map-get($base-variables, "base-border-radius");
+  border-width: map-get($base-variables, "base-border-thickness");
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.notification {
+  color: map-get($colors, "secondary");
+  border-color: map-get($colors, "secondary");
+  border-style: solid;
+  margin: map-get($base-variables, "base-margin");
+  padding: map-get($base-variables, "base-padding");
+  border-radius: map-get($base-variables, "base-border-radius");
+  border-width: map-get($base-variables, "base-border-thickness");
+}
+
+.dark-theme {
+  @extend .text-primary-light-9;
+  @extend .bg-primary-dark-9;
+}
+
+.light-theme {
+  @extend .text-primary-dark-9;
+  @extend .bg-primary-light-9;
+}
