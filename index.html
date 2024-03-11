@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      @import url("/css/index.css");
+
+      /* :root {
+        --primary: #ffffff;
+        --secondary: #000000;
+        --error: #ffbb00;
+        --info: #fc01ef;
+        --blue: #1919e6;
+        --red: #e61919;
+        --yellow: #e6e619;
+        --green: #19e635;
+        --orange: #ffa600;
+        --purple: #9900ff;
+        --gray: #808080;
+        --black: black;
+        --white: white;
+        --base-padding: 1rem;
+        --base-margin: 1rem;
+        --base-border-radius: 60px;
+        --base-border-thickness: 5px;
+        --base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+        --base-font-size: 5rem;
+        --font-size-sm: var(--base-font-size) * 0.75;
+        --font-size-lg: var(--base-font-size) * 1.5;
+        --font-size-xl: var(--base-font-size) * 2;
+        --font-size-xxl: var(--base-font-size) * 3;
+      } */
+    </style>
   </head>
   <body class="dark-theme" id="theme">
     <nav class="navbar-primary text-white mb-4">
@@ -12,7 +40,7 @@
         <h2 class="site-title">AntUI</h2>
         <p>A lightweight CSS library for ant devs</p>
         <button
-          class="btn-outlined-purple text-purple text-hover-white font-xs"
+          class="btn-outlined-purple text-hover-white font-xs"
           onclick="buttonEvent()"
         >
           Switch Theme
@@ -148,7 +176,7 @@
 
       <!-- grid system -->
       <h2 class="mb-2">Grid System</h2>
-      <div class="row gap-2 justify-center">
+      <div class="row gap-2 justify-content-center">
         <div class="col-12-xs col-5-sm col-3-xl">
           <div class="card">
             <h3 class="card-title">Hello, ninjas</h3>
@@ -218,10 +246,7 @@
       <hr class="mt-4 mb-4" />
     </div>
 
-
-    <div class="temp">
-      
-    </div>
+    <div class="temp"></div>
   </body>
   <script>
     const buttonEvent = () => {
