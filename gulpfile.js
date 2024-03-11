@@ -8,7 +8,7 @@ function GenerateCSS() {
     return src('pixee-ui/**/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(purgecss({ content: ['*.html'] }))
-        .pipe(dest('css'))
+        .pipe(dest('dist'))
 }
 
 function watchSASS() {
