@@ -2,48 +2,35 @@
 
 $grid-columns: 12;
 
-$grid-gaps: (
-  "0": 0,
-  "1": 10px,
-  "2": 20px,
-  "3": 30px,
-);
+// $place-content: start, end, center, baseline, stretch, space-between,
+//   space-around, space-evenly;
+// $place-items: start, end, center, baseline, stretch;
+// $place-self: start, end, center, stretch, auto;
 
-$place-content: start, end, center, baseline, stretch, space-between,
-  space-around, space-evenly;
-$place-items: start, end, center, baseline, stretch;
-$place-self: start, end, center, stretch, auto;
-
-$grid-items: (
-  "place-content": $place-content,
-  "place-items": $place-items,
-  "place-self": $place-self,
-);
+// $grid-items: (
+//   "place-content": $place-content,
+//   "place-items": $place-items,
+//   "place-self": $place-self,
+// );
 
 // Grid Loop
-@each $key, $data in $grid-items {
-  @each $val in $data {
-    .#{$key}-#{$val} {
-      #{$key}: $val;
-    }
-  }
-}
+// @each $key, $data in $grid-items {
+//   @each $val in $data {
+//     .#{$key}-#{$val} {
+//       #{$key}: $val;
+//     }
+//   }
+// }
 
-// Grid Gaps
-@each $key, $val in $grid-gaps {
-  .gap-#{$key} > * {
-    padding: $val;
-  }
-  .gap-#{$key} {
-    margin-left: -$val;
-    margin-right: -$val;
-  }
-}
+
+// Grid row
 
 .row {
   display: flex;
   flex-flow: row wrap;
 }
+
+
 
 // Col Classes
 @include xs {

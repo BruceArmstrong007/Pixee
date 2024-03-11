@@ -13,6 +13,16 @@ $grid-columns: 12;
 //   "place-self": $place-self,
 // );
 
+// Grid Loop
+// @each $key, $data in $grid-items {
+//   @each $val in $data {
+//     .#{$key}-#{$val} {
+//       #{$key}: $val;
+//     }
+//   }
+// }
+
+
 // Grid row
 
 .row {
@@ -20,14 +30,7 @@ $grid-columns: 12;
   flex-flow: row wrap;
 }
 
-// Grid Loop
-@each $key, $data in $grid-items {
-  @each $val in $data {
-    .#{$key}-#{$val} {
-      #{$key}: $val;
-    }
-  }
-}
+
 
 // Col Classes
 @include xs {
