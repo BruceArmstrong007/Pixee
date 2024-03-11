@@ -47,12 +47,6 @@ In style.css
 
 </head>
 ```
------------------------
-
-
-## Documentation coming soon
-
-### Demo - run index.html in your local machine - ideally via live server in vscode
 
 -----------------------
 
@@ -149,3 +143,11 @@ In style.css
 }
 
 ```
+-----------------------
+
+
+## Documentation coming soon
+
+### Demo - run index.html in your local machine - ideally via live server in vscode
+
+![Pixee (11 03 2024 12_54)](https://github.com/BruceArmstrong007/Pixee/assets/48177059/0129244e-c98d-4006-9630-4f1e326b4721)
