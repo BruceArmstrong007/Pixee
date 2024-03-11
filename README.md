@@ -146,7 +146,7 @@ In style.css
 -----------------------
 
 
-## ![Docs Link](https://brucearmstrong007.github.io/Pixee)
+## [Docs Link Click Here](https://brucearmstrong007.github.io/Pixee)
 
 ### Demo - run index.html in your local machine - ideally via live server in vscode
 
