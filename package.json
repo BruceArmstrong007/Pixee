@@ -1,6 +1,6 @@
 {
   "name": "pixee",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Light-weight UI library built for modern web applications.",
   "main": "dist/index.scss",
   "scripts": {

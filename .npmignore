@@ -4,3 +4,4 @@ gulpfile.js
 index.html
 package.json
 package-lock.json
+/docs
