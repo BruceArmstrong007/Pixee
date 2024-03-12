@@ -32,11 +32,9 @@
     "url": "https://github.com/BruceArmstrong007/Pixee/issues"
   },
   "homepage": "https://github.com/BruceArmstrong007/Pixee#readme",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-purgecss": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "pixee": "^0.0.4",
     "sass": "^1.71.1"
   }
 }
